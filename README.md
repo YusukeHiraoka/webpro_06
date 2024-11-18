@@ -1,7 +1,6 @@
 # webpro_06
 
 ## このプログラムについて
-
 ### ファイル一覧
 
 ファイル名 | 説明
@@ -14,12 +13,6 @@ views/janken.ejs| じゃんけんの開始画面
 view/animal.ejs |
 
 
-
-
-
-```javascript
-console.log( 'Hello' );
-```
 ## 各ファイルのドキュメントと実行手順
 ###  1. /hello1
 ・関数名：```app.get("/hello1", ...)```
