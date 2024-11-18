@@ -10,7 +10,8 @@ views/show.ejs | 挨拶の表示画面
 views/icon.ejs |アイコン表示画面
 view/luck.ejs |おみくじ結果表示画面
 views/janken.ejs| じゃんけんの開始画面
-view/animal.ejs |動物ゲームの結果表示画面
+view/animal.ejs |動物ゲームの開始表示画面
+view/animal.ejs|惑星クイズの開始表示画面
 
 
 ## 各ファイルのドキュメントと実行手順
