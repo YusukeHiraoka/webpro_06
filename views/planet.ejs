@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>惑星クイズ</title>
+</head>
+<body>
+  <h1>惑星クイズ</h1>
+  <p><%= question %></p>
+  <form action="/planet" method="get">
+    <% choices.forEach(choice => { %>
+      <label>
+        <input type="radio" name="answer" value="<%= choice %>" 
+          <% if (userAnswer === choice) { %>checked<% } %> />
+        <%= choice %>
+      </label><br />
+    <% }); %>
+    <button type="submit">回答する</button>
+  </form>
+
+  <% if (result) { %>
+    <h2>結果: <%= result %></h2>
+  <% } %>
+</body>
+</html>

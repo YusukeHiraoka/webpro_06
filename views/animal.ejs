@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <body>
+    <meta charset="UTF-8">
+    <title>アニマル バトル</title>
+</body>
+<h1>アニマルバトル</h1>
+<h2>好きな動物を選んでコンピュータと勝負しよう！</h2>
+</head>
+<table border="1" width="500">
+<tr>
+    <th>勝ち</th>
+    <th>負け</th>
+</tr>
+<tr>
+    <td>ライオン</td>
+    <td>ゾウ</td>
+</tr>
+<tr>
+    <td>ゾウ</td>
+    <td>カンガルー</td>
+</tr>
+<tr>
+    <td>カンガルー</td>
+    <td>ライオン</td>
+</tr>
+
+
+    <p>あなたの選んだ動物は<%= your %>です．</p>
+    <p>コンピュータは<%= cpu %>です．</p>
+    <p>判定：<%= judgement %></p>
+    <p>現在<%= total %>試合中<%= win %>勝しています．</p>
+    <hr>
+    <form action="/animal" method="get">
+        <input type="hidden" name="win" value="<%= win %>">
+        <input type="hidden" name="total" value="<%= total %>">
+        
+        <input type="radio" name="animal" id="animal1" value="ライオン">
+        <label for="animal1">ライオン</label><br>
+        <input type="radio" name="animal" id="animal2" value="ゾウ">
+        <label for="animal2">ゾウ</label><br>
+        <input type="radio" name="animal" id="animal3" value="カンガルー">
+        <label for="animal3">カンガルー</label><br>
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
