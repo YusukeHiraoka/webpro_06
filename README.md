@@ -6,11 +6,11 @@
 ファイル名 | 説明
 -|-
 app5.js|プログラム本体
-views/show.ejs | 
-views/icon.ejs |
-view/luck.ejs |
+views/show.ejs | 挨拶の表示画面
+views/icon.ejs |アイコン表示画面
+view/luck.ejs |おみくじ結果表示画面
 views/janken.ejs| じゃんけんの開始画面
-view/animal.ejs |
+view/animal.ejs |動物ゲームの結果表示画面
 
 
 ## 各ファイルのドキュメントと実行手順
